@@ -11,7 +11,7 @@ from devilizer.visualizer.display_items import display_items
 
 
 def generate_table(display: str) -> Panel:
-    """Gnerate a panel to display using the rich library.
+    """Generate a panel to display using the rich library.
 
     Args:
         display (str): The visualized values to display.
