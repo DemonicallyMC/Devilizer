@@ -17,7 +17,7 @@ def generate_table(display: str) -> Panel:
         display (str): The visualized values to display.
 
     Returns:
-        rich.Panel: The generated a panel.
+        rich.Panel: The generated panel.
     """
     table = Panel(display, expand=False, title="[bold blue]Devilizer[/bold blue]")
     return Align(table, align="center")
