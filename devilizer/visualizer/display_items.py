@@ -1,4 +1,4 @@
-def display_items(in_lst: list, current: int) -> str:
+def display_items(in_lst: list[int], current: int) -> str:
     """Display a list of values.
 
     Args:
