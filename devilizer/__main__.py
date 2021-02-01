@@ -11,13 +11,13 @@ from devilizer.visualizer.display_items import display_items
 
 
 def generate_table(display: str) -> Panel:
-    """Gnerate a panel to display using the rich library.
+    """Generate a panel to display using the rich library.
 
     Args:
         display (str): The visualized values to display.
 
     Returns:
-        rich.Panel: The generated a panel.
+        rich.Panel: The generated panel.
     """
     table = Panel(display, expand=False, title="[bold blue]Devilizer[/bold blue]")
     return Align(table, align="center")

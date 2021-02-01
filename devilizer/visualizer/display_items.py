@@ -1,6 +1,4 @@
-import random
-
-def display_items(in_lst: list, current: int) -> str:
+def display_items(in_lst: list[int], current: int) -> str:
     """Display a list of values.
 
     Args:
@@ -12,7 +10,7 @@ def display_items(in_lst: list, current: int) -> str:
     """
     result = ""
     max_height = max(in_lst)
-    for i in reversed(range(0, max_height+1)):
+    for i in range(max_height, -1, -1):
         for j, el in enumerate(in_lst):
             if el >= i:
                 if j == current:
