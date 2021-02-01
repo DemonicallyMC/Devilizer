@@ -24,7 +24,7 @@ def generate_table(display: str) -> Panel:
 
 
 console = Console()
-lst = random.sample(list(range(1, 20)), 19)
+lst = random.sample(range(1, 20), 19)
 with Live(auto_refresh=False) as live:
     for step, current in bubble_sort(lst):
         live.update(generate_table(display_items(step, current)))
