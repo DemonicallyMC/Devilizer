@@ -59,6 +59,7 @@ from devilizer.visualizer.visualize import visualize
 def bubble_sort(in_lst: list[int]) -> list[list[int], list[int]]:
     ...
 
+
 lst = random.sample(range(1, 20), 19)
 visualize(lst, bubble_sort)
 ```

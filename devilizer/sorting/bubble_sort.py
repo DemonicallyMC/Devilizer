@@ -14,8 +14,8 @@ def bubble_sort(in_lst: list[int]) -> list[list[int], list[int]]:
     done = False
     while not done:
         done = True
-        for i in range(len(out_lst)-1):
-            if out_lst[i] > out_lst[i+1]:
-                out_lst[i], out_lst[i+1] = out_lst[i+1], out_lst[i] 
+        for i in range(len(out_lst) - 1):
+            if out_lst[i] > out_lst[i + 1]:
+                out_lst[i], out_lst[i + 1] = out_lst[i + 1], out_lst[i]
                 done = False
-            yield [out_lst, [i+1]]
+            yield [out_lst, [i + 1]]
