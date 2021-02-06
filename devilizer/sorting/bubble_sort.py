@@ -7,7 +7,7 @@ def bubble_sort(in_lst: list[int]) -> list[list[int], list[int]]:
     Yields:
         list[
             list[int]: Current values of list.
-            list[int]: Indexes to highlight red in visualization.ß
+            list[int]: Indexes to highlight red in visualization.
         ]
     """
     out_lst = in_lst.copy()
@@ -18,4 +18,4 @@ def bubble_sort(in_lst: list[int]) -> list[list[int], list[int]]:
             if out_lst[i] > out_lst[i+1]:
                 out_lst[i], out_lst[i+1] = out_lst[i+1], out_lst[i] 
                 done = False
-            yield out_lst, [i+1]
+            yield [out_lst, [i+1]]
