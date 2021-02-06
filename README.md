@@ -21,4 +21,4 @@ To use Devilizer follow the steps below:
 
 ## Examples
 
-![example](media/example.mp4)
+![example](media/example.gif)
