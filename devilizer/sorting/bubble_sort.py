@@ -1,11 +1,11 @@
-def bubble_sort(in_lst: list) -> list:
+def bubble_sort(in_lst: list[int]) -> list[int]:
     """Bubble Sort Algorithm
 
     Args:
-        in (list): List to sort.
+        in (list[int]): List to sort.
 
     Returns:
-        list: Sorted list.
+        list[int]: Sorted list.
     """
     out_lst = in_lst.copy()
     done = False
@@ -14,6 +14,5 @@ def bubble_sort(in_lst: list) -> list:
         for i in range(len(out_lst)-1):
             if out_lst[i] > out_lst[i+1]:
                 out_lst[i], out_lst[i+1] = out_lst[i+1], out_lst[i] 
-                done = True
+                done = False
             yield out_lst, i+1
-    return out_lst
