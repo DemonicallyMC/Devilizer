@@ -1,11 +1,14 @@
-def bubble_sort(in_lst: list[int]) -> list[int]:
+def bubble_sort(in_lst: list[int]) -> list[list[int], list[int]]:
     """Bubble Sort Algorithm
 
     Args:
         in (list[int]): List to sort.
 
-    Returns:
-        list[int]: Sorted list.
+    Yields:
+        list[
+            list[int]: Current values of list.
+            list[int]: Indexes to highlight red in visualization.ß
+        ]
     """
     out_lst = in_lst.copy()
     done = False
