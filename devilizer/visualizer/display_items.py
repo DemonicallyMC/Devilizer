@@ -1,4 +1,4 @@
-def display_items(in_lst: list[int], current: int) -> str:
+def display_items(in_lst: list[int], current: list[int]) -> str:
     """Display a list of values.
 
     Args:
@@ -13,7 +13,7 @@ def display_items(in_lst: list[int], current: int) -> str:
     for i in range(max_height, -1, -1):
         for j, el in enumerate(in_lst):
             if el >= i:
-                if j == current:
+                if j in current:
                     result += "[red]#[/red]"
                 else:
                     result += "#"
