@@ -12,7 +12,8 @@ To see a basic example of Devilizer, follow the steps below:
 
 1. Ensure that `pipenv` is installed on your system.
 2. Clone this repository.
-3. From the root of the repository folder, run `pipenv run python3 -m devilizer` to see an example.
+3. From the root of the repository folder, install the dependencies via `pipenv sync`.
+4. Run `pipenv run python3 -m devilizer` to see an example.
 
 Currently, this will visualize the bubble sort algorithm.
 
